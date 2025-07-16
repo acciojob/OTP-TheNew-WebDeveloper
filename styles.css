@@ -26,10 +26,4 @@ body{
     height: 60px;
     width: 60px;
     margin: 10px;
-    text-align: center;
-}
-
-input ::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
 }
