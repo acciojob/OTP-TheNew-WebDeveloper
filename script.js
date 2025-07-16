@@ -36,3 +36,7 @@ for (let i = 0; i < inps.length; i++) {
     inps[i].addEventListener('input', moveFocusForward);
     inps[i].addEventListener('keydown', moveFocusBackward);
 }
+
+if (inps.length > 0) {
+    inps[0].focus();
+}
