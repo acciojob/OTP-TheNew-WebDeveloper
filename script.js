@@ -18,16 +18,15 @@ function moveFocusBackward(event) {
     if (event.key === "Backspace" || event.keyCode === 8) {
         event.preventDefault(); // Prevent browser's back navigation
 
-        if (count => 0) {
-			if(count == 0) {
-				event.target.value = '';
+        if (event.target.value !== '') {
+			event.target.value = '';
+		}
+		else {
+			if (count > 0) { // Ensure we don't go below the first element
+                count--; // Decrement count to go to the previous element
+                inps[count].focus();
 			}
-			else {
-				event.target.value = '';
-            	count--;
-            	inps[count].focus();
-			}
-        }
+		}
     }
 }
 
